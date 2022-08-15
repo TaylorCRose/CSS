@@ -1,0 +1,81 @@
+-HTML-
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="image.css">
+</head>
+
+<body>
+    <div class="imgWrap">
+        <img src="https://images.pexels.com/photos/11798029/pexels-photo-11798029.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="">
+
+        <div class="overlay">
+            <h2>Taylor Rose <br>(3D version)</h2>
+
+            <p>Web Designer</p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+-CSS-
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+.imgWrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.imgWrap img {
+    max-width: 100%;
+    display: block;
+    transition: transform 0.3s;
+}
+.overlay {
+    position: absolute;
+    top: 0; left: 0;
+    background-image: linear-gradient(to bottom, transparent 40% #000) ;
+    width: 100%; height: 100%;
+    color: black;
+    font-size: 14px;
+    font-family: Tahoma ;
+    display: flex; flex-direction: column;
+    justify-content:center;
+    padding: 0 0 540px 230px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.overlay h2, .overlay p {
+    transform: translateY(100px);
+    transition: transform 1s;
+}
+.overlay h2 {
+    transition-delay: 0.1s;
+}
+.imgWrap:hover img {
+    transform: scale(1.15);
+}
+.imgWrap:hover .overlay {opacity: 1;
+}
+.imgWrap:hover .overlay h2, .imgWrap:hover .overlay p {
+    transform: translateY(0);
+}
+.imgWrap:hover .overlay p {
+    transition-delay: 0.1s;
+}
