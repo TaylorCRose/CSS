@@ -1,0 +1,75 @@
+-HTML-
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Blog CSS</title>
+    <link rel="stylesheet" href="photoblog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>Photo Blog CSS project
+        <hr> Taylor Rose
+    </nav>
+
+
+    <img
+        src="https://images.unsplash.com/photo-1569525987258-6aa03a5e4926?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80">
+    <img
+        src="https://images.unsplash.com/photo-1551161440-88a5c5b09ba0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80">
+
+    <img
+        src="https://images.unsplash.com/photo-1482053450283-3e0b78b09a70?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80">
+    <img
+        src="https://images.unsplash.com/photo-1600439797179-585ece158b9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80">
+    <img
+        src="https://images.unsplash.com/photo-1542753172-bcd7253a78a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80">
+    <img
+        src="https://images.unsplash.com/photo-1610824224317-ac64e52481c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80">
+
+
+    <h4> Photos source: Unsplash </h4>
+
+</body>
+
+</html>
+
+-CSS-
+
+img {
+    width: 25%;
+    
+    margin: calc(10%/4);
+    
+    
+    
+}
+nav {
+    font-family: 'Tapestry', cursive;
+    font-stretch: expanded;
+    text-transform: uppercase;
+    
+    width: 25%;
+    margin-left: calc(10%/6);
+    padding: 1.5em 0;
+
+}
+
+h4 {
+
+    font-family: 'Tapestry', cursive;
+    font-stretch: expanded;
+    text-transform: uppercase;
+    width: 25%;
+    margin-left: calc(10%/6);
+    padding: 1.5em 0;
+   
+
+}
